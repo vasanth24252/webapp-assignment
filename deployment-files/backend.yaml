@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: registry.digitalocean.com/web-app-assignment/backend:latest
+          image: registry.digitalocean.com/web-app-assignment/app:backend
           ports:
             - containerPort: 5000
 ---

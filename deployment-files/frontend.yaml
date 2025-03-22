@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: registry.digitalocean.com/web-app-assignment/backend:frontend
+          image: registry.digitalocean.com/web-app-assignment/app:frontend
           ports:
             - containerPort: 3000
           env:
