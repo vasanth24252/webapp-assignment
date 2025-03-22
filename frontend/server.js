@@ -12,15 +12,22 @@ app.get("/", async (req, res) => {
     res.send(`
       <html>
         <head>
-          <title>Node.js Frontend</title>
+          <title>Node.js</title>
           <style>
-            body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+            body {
+              font-family: Arial, sans-serif;
+              text-align: center;
+              padding: 50px;
+              background-image: url('/background.png');
+              background-size: cover;
+              background-position: center;
+            }
             h1 { color: blue; }
           </style>
         </head>
         <body>
-          <h1>Welcome to Node.js Frontend</h1>
-          <p>Backend says: <strong>${message}</strong></p>
+          <h1>Welcome to a sample web application</h1>
+          <p>Flask wants to say something as well: <strong>${message}</strong></p>
         </body>
       </html>
     `);
@@ -28,6 +35,8 @@ app.get("/", async (req, res) => {
     res.send("<h1>Could not reach backend</h1>");
   }
 });
+
+app.use("/background.png", express.static("background.png"));
 
 app.listen(PORT, () => {
   console.log(`Frontend running on port ${PORT}`);
