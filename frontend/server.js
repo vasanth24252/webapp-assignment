@@ -18,7 +18,7 @@ app.get("/", async (req, res) => {
               font-family: Arial, sans-serif;
               text-align: center;
               padding: 50px;
-              background-image: url('/background.png');
+              background-image: url('/only-shark.png');
               background-size: cover;
               background-position: center;
             }
@@ -36,7 +36,7 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.use("/background.png", express.static("background.png"));
+app.use("/background.png", express.static("only-shark.png"));
 
 app.listen(PORT, () => {
   console.log(`Frontend running on port ${PORT}`);
