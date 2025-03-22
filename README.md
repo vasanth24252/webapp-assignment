@@ -41,3 +41,7 @@ kubectl get services
 - It will take around 2-3 minutes for the loadbalancer to come to "Active" state and the external IP address will be visible in the output of the above command.
 
 - Visit the website over the IP address to check the functionality.
+
+
+
+![DO_Powered_by_Badge_blue](https://github.com/user-attachments/assets/7a233410-546b-4d98-b732-623afe212b10)
