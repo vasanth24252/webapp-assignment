@@ -36,7 +36,7 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.use("/background.png", express.static("only-shark.png"));
+app.use("/only-shark.png", express.static("only-shark.png"));
 
 app.listen(PORT, () => {
   console.log(`Frontend running on port ${PORT}`);
