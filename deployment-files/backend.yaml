@@ -15,6 +15,7 @@ spec:
       containers:
         - name: backend
           image: registry.digitalocean.com/web-app-assignment/app:backend
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
 ---

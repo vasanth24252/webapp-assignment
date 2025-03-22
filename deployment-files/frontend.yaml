@@ -15,6 +15,7 @@ spec:
       containers:
         - name: frontend
           image: registry.digitalocean.com/web-app-assignment/app:frontend
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
           env:
