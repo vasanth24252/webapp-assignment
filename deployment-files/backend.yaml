@@ -48,12 +48,16 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: backend
-  minReplicas: 1
+  minReplicas: 2
   maxReplicas: 20
   metrics:
   - type: Resource
     resource:
       name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 80
+      name: memory
       target:
         type: Utilization
         averageUtilization: 80
